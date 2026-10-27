@@ -90,12 +90,7 @@ of missed cases.
 
 \## Interpretation
 
-Top predictors (by scaled coefficient): age, average glucose level, 
-
-hypertension, smoking status. These align with established clinical risk 
-
-factors for stroke, supporting the model's validity beyond pure statistical fit.
-
+Age is by far the dominant predictor (scaled coefficient of about 2.1), followed by average glucose level and hypertension, which matches the EDA findings. Some features, such as `work_type_children` and `bmi_missing`, show elevated importance. This is likely caused by SMOTE interpolation artifacts rather than genuine clinical signal, so they should be interpreted cautiously.
 
 
 \## Limitations
