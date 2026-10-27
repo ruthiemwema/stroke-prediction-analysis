@@ -31,8 +31,6 @@ Predict stroke risk from patient health and demographic data, with a focus on id
 ## Interpretation
 Age is by far the dominant predictor (scaled coefficient of about 2.1), followed by average glucose level and hypertension, which matches the EDA findings. Some features, such as `work_type_children` and `bmi_missing`, show elevated importance. This is likely caused by SMOTE interpolation artifacts rather than genuine clinical signal, so they should be interpreted cautiously.
 
-![Feature importance](feature_importance.png)
-
 ## Limitations
 - Precision remains low. In a real deployment this model would need to function as a *screening* tool (flagging patients for further review), not a diagnostic one.
 - SMOTE-generated synthetic data may not perfectly reflect real patient distributions, especially for categorical features.
